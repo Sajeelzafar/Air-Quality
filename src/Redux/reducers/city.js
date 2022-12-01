@@ -16,7 +16,7 @@ export const fetchCountries = createAsyncThunk(
     },
   );
 
-export const filteredCountries = (data) => (
+export const filteredCountries = (data = "") => (
     {
         type: "FILTER",
         payload: data,
