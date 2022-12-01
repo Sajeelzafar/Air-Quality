@@ -1,14 +1,15 @@
 import { useEffect } from "react";
 import { Button, Card, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCountries, filteredCountries } from "../Redux/reducers/city";
+import { fetchCountries, filteredCountries } from "../Redux/reducers/countries";
 import { v4 as uuidv4 } from 'uuid';
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
     let countryName;
     
     const dispatch = useDispatch();
-    const countries = useSelector((state) => state.cityReducer);
+    const countries = useSelector((state) => state.countryReducer);
 
     useEffect(() => {
         dispatch(fetchCountries());
@@ -37,7 +38,9 @@ const Home = () => {
                                 Country code: {country.countrycode} <br />
                                 Region: {country.region}
                             </Card.Text>
-                            <Button variant="primary">Go somewhere</Button>
+                            <Button variant="primary"><NavLink className="nav-link" to="/city" state= {{
+                                info: country,
+                                }}>Go somewhere</NavLink></Button>
                         </Card.Body>
                     </Card>
                 ))

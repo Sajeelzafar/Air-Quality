@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
 import { configureStore } from '@reduxjs/toolkit';
-import cityReducer from './reducers/city';
+import countryReducer from './reducers/countries';
 
 const rootReducer = combineReducers({
-    cityReducer,
+    countryReducer,
   });
   
   const store = configureStore({

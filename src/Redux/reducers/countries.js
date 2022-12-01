@@ -23,7 +23,7 @@ export const filteredCountries = (data = "") => (
     }
 )
 
-const cityReducer = (state = [], action) => {
+const countryReducer = (state = [], action) => {
     switch (action.type) {
       case 'FETCH/fulfilled': {
         return action.payload;
@@ -40,4 +40,4 @@ const cityReducer = (state = [], action) => {
     }
 }
 
-export default cityReducer;
+export default countryReducer;
