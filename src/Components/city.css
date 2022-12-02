@@ -1,0 +1,21 @@
+@import url(//db.onlinewebfonts.com/c/174bcab3d76d06d2f982554c409aa234?family=Gill+Sans);
+
+body {
+    background-color: rgb(67, 105, 178, 0.75);
+}
+
+.cityContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+.leftSidecityContainer{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 10rem;
+    text-align: center;
+    font-size: larger;
+    color: white;
+}

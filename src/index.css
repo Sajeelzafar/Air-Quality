@@ -25,3 +25,15 @@ code {
   gap: 5rem;
   padding: 1rem 2rem 4rem 4rem;
 }
+
+.countryDisplayBlock {
+  padding-top: 4rem;
+}
+
+.countryDisplay {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+

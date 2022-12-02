@@ -11,6 +11,7 @@ export const fetchCountries = createAsyncThunk(
         countrycode: country.cca2,
         region: country.region,
         flag: country.flags.svg,
+        capital: country.capital,
       }));
       return response;
     },
