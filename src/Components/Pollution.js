@@ -47,10 +47,11 @@ return(
                     <td>{element.components.so2}</td>
                     <td><Time props={element.dt} /></td>
                 </tr>
-            ))}
-            
+            ))} 
         </tbody>
+        
     </Table>
+    {(pollutionData.length==0)&&(<div className="tabletextColor">Data for this city is currently unavailable</div>)}
     </div>
 )
 }

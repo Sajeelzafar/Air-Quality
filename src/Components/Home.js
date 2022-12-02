@@ -30,7 +30,7 @@ const Home = () => {
             </div>
             <Container fluid className="containerCountries">
                 {countries.map((country) => (
-                    <Card style={{ width: '14rem' }} key={uuidv4()} className="countryInfo">
+                    <Card style={{ width: '10rem' }} key={uuidv4()} className="countryInfo">
                     <Card.Img variant="top" src={country.flag} />
                         <Card.Body>
                             <Card.Title>{country.name}</Card.Title>
@@ -38,9 +38,9 @@ const Home = () => {
                                 Country code: {country.countrycode} <br />
                                 Region: {country.region}
                             </Card.Text>
-                            <Button ><NavLink className="nav-link" to="/city" state= {{
+                            <Button><NavLink className="nav-link " to="/city" state= {{
                                 info: country,
-                                }}>Go somewhere</NavLink></Button>
+                                }}>Visit Cities</NavLink></Button>
                         </Card.Body>
                     </Card>
                 ))

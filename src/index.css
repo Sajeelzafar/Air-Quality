@@ -23,8 +23,8 @@ code {
 
 .countrySearchBox {
   display: flex;
-  gap: 5rem;
-  padding: 1rem 2rem 4rem 4rem;
+  gap: 5%;
+  padding: 1rem 2% 4rem 4%;
 }
 
 .countryDisplayBlock {
@@ -38,6 +38,4 @@ code {
   justify-content: flex-end;
 }
 
-.countryButton {
-  background-color: navy;
-}
+
