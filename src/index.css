@@ -29,9 +29,14 @@ code {
 .containerCountries {
   display: flex;
   flex-wrap: wrap;
-  padding: 2%;
   justify-content: center;
-  gap: 2rem;
+  
+}
+
+.countryInfo {
+  background-color: rgb(67, 105, 178, 0.75);
+  color: white;
+  text-align: end;
 }
 
 .countrySearchBox {
