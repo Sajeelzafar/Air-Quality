@@ -76,7 +76,7 @@
 > Link to deployed project is:
 
 - [Live Demo Link](https://space-x1234.netlify.app/)
-
+- [Video Link](https://www.loom.com/share/318a5832c4ef4cd7b6fb6c49a1267e2c)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
