@@ -69,6 +69,8 @@
 
 - [Live Demo Link](https://airqualitysajeel.netlify.app/)
 - [Video Link](https://www.loom.com/share/318a5832c4ef4cd7b6fb6c49a1267e2c)
+- [Video Link 2](https://www.loom.com/share/948219374af74833b6711fe61c042374)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
