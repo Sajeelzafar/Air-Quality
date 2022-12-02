@@ -1,8 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const key = '&appid=aff53bd7154a6d1faefb6b53deac0c16';
-const urlLatLon = 'http://api.openweathermap.org/geo/1.0/direct?q=';
-const urlAirData = 'http://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=';
+const urlLatLon = 'https://api.openweathermap.org/geo/1.0/direct?q=';
+const urlAirData = 'https://api.openweathermap.org/data/2.5/air_pollution/forecast?lat=';
 
 export const airpollution = createAsyncThunk(
   'FETCH_AIRPOLLUTION',
