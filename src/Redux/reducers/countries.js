@@ -1,9 +1,11 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 
 const url = 'https://restcountries.com/v3.1/all';
+const FETCH = 'FETCH';
+const FILTER = 'FILTER';
 
 export const fetchCountries = createAsyncThunk(
-  'FETCH',
+  FETCH,
   async () => {
     const data = await (fetch(url)).then((res) => res.json());
     const response = data.map((country) => ({
@@ -19,18 +21,18 @@ export const fetchCountries = createAsyncThunk(
 
 export const filteredCountries = (data = '') => (
   {
-    type: 'FILTER',
+    type: FILTER,
     payload: data,
   }
 );
 
 const countryReducer = (state = [], action) => {
   switch (action.type) {
-    case 'FETCH/fulfilled': {
+    case `${FETCH}/fulfilled`: {
       return action.payload;
     }
 
-    case 'FILTER': {
+    case FILTER: {
       const newState = state.filter((el) => el.name.toString().toLowerCase()
         .includes(action.payload.toString().toLowerCase()));
       return newState;
