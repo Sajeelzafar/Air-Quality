@@ -18,6 +18,7 @@ code {
   padding: 2%;
   justify-content: center;
   gap: 2rem;
+  
 }
 
 .countrySearchBox {
@@ -37,3 +38,6 @@ code {
   justify-content: flex-end;
 }
 
+.countryButton {
+  background-color: navy;
+}

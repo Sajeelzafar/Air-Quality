@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { Button, Container } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { NavLink, useLocation } from "react-router-dom"
-import { fetchCities, fetchLatLon } from "../Redux/reducers/cities";
+import { fetchCities } from "../Redux/reducers/cities";
 import { v4 as uuidv4 } from 'uuid';
 import './city.css';
 
@@ -12,7 +12,6 @@ const City = () => {
     let countryInfo = location.state.info;
     useEffect(() => {
         dispatch(fetchCities(countryInfo.name));
-        dispatch(fetchLatLon());
       }, [dispatch]);
     const cities = useSelector((state) => state.citiesReducer);
 
